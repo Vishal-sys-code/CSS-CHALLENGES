@@ -1,0 +1,226 @@
+:root {
+  --curve: cubic-bezier(0,.57,1,.48);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -200px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  color: #333;
+  background: #fff;
+  background-color: #e56262;
+  -webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+          box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 10px;
+}
+
+.center {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dot {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.animated-golas {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.gola-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-name: gola1-animation;
+          animation-name: gola1-animation;
+  -webkit-box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.3);
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: var(--curve);
+          animation-timing-function: var(--curve);
+}
+
+.gola-2 {
+  position: absolute;
+  background-color: antiquewhite;
+  top: 15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-name: gola2-animation;
+          animation-name: gola2-animation;
+  -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.3);
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: var(--curve);
+          animation-timing-function: var(--curve);
+}
+
+.gola-3 {
+  position: absolute;
+  background-color: black;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  -webkit-animation-name: gola3-animation;
+          animation-name: gola3-animation;
+  -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: var(--curve);
+          animation-timing-function: var(--curve);
+}
+
+@-webkit-keyframes gola1-animation {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes gola1-animation {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes gola2-animation {
+  0%, 15% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes gola2-animation {
+  0%, 15% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes gola3-animation {
+  0%,
+  35% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  45%,
+  55% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+  65%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes gola3-animation {
+  0%,
+  35% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  45%,
+  55% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+  65%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
